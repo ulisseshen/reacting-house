@@ -1,0 +1,7 @@
+{
+  "name": "CasaReact_Angular",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "CasaReact_Angular",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
