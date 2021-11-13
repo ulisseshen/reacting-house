@@ -1,7 +1,8 @@
 {
   "name": "CasaReact_Angular",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }

@@ -1,25 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Inbox
+      <ion-icon name="home"></ion-icon>
+      Reacting House
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-  
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">
-        Inbox
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
-  </ion-list>
-</ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Quarto</ion-card-title>
+    </ion-card-header>
+    <ion-item>
+      <ion-icon name="bulb-outline" slot="start"></ion-icon>
+      <ion-label>ILUMINÇÃO</ion-label>
+      <ion-toggle color="primary" [(ngModel)]="lampada" #lamp (click)="onClickLampada(lamp.checked)"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="snow-outline" slot="start"></ion-icon>
+      <ion-label>VENTILADOR</ion-label>
+      <ion-toggle color="primary" [(ngModel)]="ventilador" #fan (ionChange)="changeVentilador(fan.checked)"></ion-toggle>
+    </ion-item>
+  </ion-card>
